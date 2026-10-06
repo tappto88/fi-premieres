@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Watchlist premieres in Finland</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f4;--ink:#14202b;--mute:#5b6b7a;--line:#cfd7de;--blue:#003580;--hot:#d6341f;--chip:#dde6ee}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#111b27;--ink:#e8eef4;--mute:#93a4b4;--line:#2a3948;--blue:#7fb0ff;--hot:#ff7a62;--chip:#1d2b3a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.45 "Bricolage Grotesque",system-ui,sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+main{max-width:760px;margin:0 auto;padding:32px 20px 64px}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.05;margin:0 0 6px;font-weight:800;letter-spacing:-.02em}
+.sub{color:var(--mute);margin:0 0 20px}
+input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:transparent;color:var(--ink);font:inherit}
+input:focus-visible,a:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.month{display:grid;grid-template-columns:110px 1fr;gap:0 16px;margin-top:28px;border-top:2px solid var(--ink);padding-top:10px}
+.month h2{margin:0;font-size:15px;font-weight:600;position:sticky;top:8px;align-self:start}
+.row{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border:0}
+.day{text-align:center;line-height:1}
+.day b{display:block;font-size:30px;font-weight:800}
+.day span{font-size:13px;color:var(--mute)}
+.title{font-weight:600;font-size:18px;color:var(--ink);text-decoration:none}
+.title:hover{text-decoration:underline}
+.meta{font-size:13px;color:var(--mute);margin-top:2px}
+.soon .day b{color:var(--hot)}
+.warn{color:var(--hot)}
+.undated{margin-top:36px;border-top:2px solid var(--ink);padding-top:10px}
+.undated h2{font-size:15px;font-weight:600;margin:0 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips a{background:var(--chip);color:var(--ink);text-decoration:none;padding:3px 10px;border-radius:99px;font-size:14px}
+.err{padding:16px;border:1px solid var(--hot);border-radius:8px}
+@media(max-width:560px){.month{grid-template-columns:1fr}.month h2{position:static;margin-bottom:4px}}
+</style>
+</head>
+<body>
+<main>
+  <h1>Premieres in Finland</h1>
+  <p class="sub" id="sub">Loading…</p>
+  <input id="q" type="search" placeholder="Filter by title" aria-label="Filter by title">
+  <div id="out"></div>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+const fmt = (o, d) => new Intl.DateTimeFormat("en-GB", o).format(d);
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let films = [];
+
+function render() {
+  const q = $("q").value.trim().toLowerCase();
+  const today = new Date().toISOString().slice(0, 10);
+  const hit = f => f.title.toLowerCase().includes(q);
+  const dated = films.filter(f => f.date && f.date >= today && hit(f)).sort((a, b) => a.date.localeCompare(b.date));
+  const undated = films.filter(f => !f.date && (!f.global_date || f.global_date >= today) && hit(f))
+                       .sort((a, b) => a.title.localeCompare(b.title));
+  let html = "", month = "";
+  for (const f of dated) {
+    const d = new Date(f.date + "T12:00:00"), m = fmt({month: "long", year: "numeric"}, d);
+    const days = Math.round((d - new Date(today + "T12:00:00")) / 864e5);
+    if (m !== month) { if (month) html += "</div></section>"; html += `<section class="month"><h2>${m}</h2><div>`; month = m; }
+    const note = f.conflict ? `<span class="warn">Sources differ: Finnkino ${f.finnkino_date}, TMDB ${f.tmdb_date}</span>` : `Source: ${f.source}`;
+    html += `<div class="row${days <= 14 ? " soon" : ""}"><div class="day"><b>${d.getDate()}</b><span>${fmt({weekday: "short"}, d)}</span></div>
+      <div><a class="title" href="${esc(f.url)}">${esc(f.title)}</a>${f.year ? ` <span class="meta">(${f.year})</span>` : ""}
+      <div class="meta">${days === 0 ? "Today" : days === 1 ? "Tomorrow" : `In ${days} days`}. ${note}</div></div></div>`;
+  }
+  if (month) html += "</div></section>";
+  if (!dated.length) html += `<p class="sub">No upcoming Finnish premieres match.</p>`;
+  if (undated.length) html += `<section class="undated"><h2>No Finnish date yet (${undated.length})</h2><div class="chips">${
+    undated.map(f => `<a href="${esc(f.url)}">${esc(f.title)}</a>`).join("")}</div></section>`;
+  $("out").innerHTML = html;
+}
+
+fetch("data.json", {cache: "no-cache"}).then(r => r.json()).then(d => {
+  films = d.films;
+  $("sub").textContent = `Your Letterboxd watchlist, sorted by Finnish release date. Updated ${fmt({dateStyle: "medium", timeStyle: "short"}, new Date(d.updated))}.`;
+  render();
+}).catch(() => {
+  $("sub").textContent = "";
+  $("out").innerHTML = `<p class="err">Couldn't load data.json. Run the "Update premieres" workflow once, and open this page from your GitHub Pages URL.</p>`;
+});
+$("q").addEventListener("input", render);
+</script>
+</body>
+</html>
