@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T10:51:24+00:00",
+ "updated": "2026-10-11T11:03:59+00:00",
  "films": [
   {
    "title": "Downton Abbey: The Grand Finale",
@@ -328,7 +328,7 @@
    "source": null,
    "finnkino_date": null,
    "tmdb_date": null,
-   "global_date": null,
+   "global_date": "2017-01-01",
    "conflict": false
   },
   {
@@ -548,7 +548,7 @@
    "source": "manual",
    "finnkino_date": null,
    "tmdb_date": null,
-   "global_date": "2027-06-17",
+   "global_date": "2027-06-16",
    "conflict": false
   },
   {
