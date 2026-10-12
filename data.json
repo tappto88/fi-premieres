@@ -1,6 +1,17 @@
 {
- "updated": "2026-10-11T11:03:59+00:00",
+ "updated": "2026-10-12T12:31:05+00:00",
  "films": [
+  {
+   "title": "Klara and the Sun",
+   "year": 2026,
+   "url": "https://letterboxd.com/film/klara-and-the-sun/",
+   "date": "2026-11-13",
+   "source": "TMDB",
+   "finnkino_date": null,
+   "tmdb_date": "2026-11-13",
+   "global_date": "2026-10-21",
+   "conflict": false
+  },
   {
    "title": "Downton Abbey: The Grand Finale",
    "year": 2025,
