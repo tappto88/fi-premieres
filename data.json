@@ -1,6 +1,17 @@
 {
- "updated": "2026-10-15T09:30:08+00:00",
+ "updated": "2026-10-16T09:22:42+00:00",
  "films": [
+  {
+   "title": "Bad Fairies",
+   "year": 2027,
+   "url": "https://letterboxd.com/film/bad-fairies/",
+   "date": null,
+   "source": null,
+   "finnkino_date": null,
+   "tmdb_date": null,
+   "global_date": "2027-05-20",
+   "conflict": false
+  },
   {
    "title": "Klara and the Sun",
    "year": 2026,
