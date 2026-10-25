@@ -1,6 +1,17 @@
 {
- "updated": "2026-10-24T09:11:14+00:00",
+ "updated": "2026-10-25T09:28:34+00:00",
  "films": [
+  {
+   "title": "You Can See Everything",
+   "year": 2026,
+   "url": "https://letterboxd.com/film/you-can-see-everything/",
+   "date": null,
+   "source": null,
+   "finnkino_date": null,
+   "tmdb_date": null,
+   "global_date": "2026-10-16",
+   "conflict": false
+  },
   {
    "title": "Bad Fairies",
    "year": 2027,
@@ -735,7 +746,7 @@
    "source": null,
    "finnkino_date": null,
    "tmdb_date": null,
-   "global_date": "2019-08-18",
+   "global_date": null,
    "conflict": false
   },
   {
