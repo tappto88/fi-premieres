@@ -1,14 +1,47 @@
 {
- "updated": "2026-10-26T10:36:29+00:00",
+ "updated": "2026-10-27T10:06:36+00:00",
  "films": [
+  {
+   "title": "Jerry Maguire",
+   "year": 1996,
+   "url": "https://letterboxd.com/film/jerry-maguire/",
+   "date": "1997-03-14",
+   "source": "TMDB",
+   "finnkino_date": null,
+   "tmdb_date": "1997-03-14",
+   "global_date": "1996-12-13",
+   "conflict": false
+  },
+  {
+   "title": "Minority Report",
+   "year": 2002,
+   "url": "https://letterboxd.com/film/minority-report/",
+   "date": "2002-08-09",
+   "source": "TMDB",
+   "finnkino_date": null,
+   "tmdb_date": "2002-08-09",
+   "global_date": "2002-06-20",
+   "conflict": false
+  },
+  {
+   "title": "Magnolia",
+   "year": 1999,
+   "url": "https://letterboxd.com/film/magnolia/",
+   "date": "2000-03-24",
+   "source": "TMDB",
+   "finnkino_date": null,
+   "tmdb_date": "2000-03-24",
+   "global_date": "1999-12-17",
+   "conflict": false
+  },
   {
    "title": "You Can See Everything",
    "year": 2026,
    "url": "https://letterboxd.com/film/you-can-see-everything/",
-   "date": null,
-   "source": null,
+   "date": "2026-11-20",
+   "source": "TMDB",
    "finnkino_date": null,
-   "tmdb_date": null,
+   "tmdb_date": "2026-11-20",
    "global_date": "2026-10-16",
    "conflict": false
   },
@@ -225,10 +258,10 @@
    "title": "Primetime",
    "year": 2026,
    "url": "https://letterboxd.com/film/primetime-2026/",
-   "date": null,
-   "source": null,
+   "date": "2026-11-27",
+   "source": "TMDB",
    "finnkino_date": null,
-   "tmdb_date": null,
+   "tmdb_date": "2026-11-27",
    "global_date": "2026-09-23",
    "conflict": false
   },
@@ -813,17 +846,6 @@
    "finnkino_date": null,
    "tmdb_date": "2019-01-21",
    "global_date": "2019-01-03",
-   "conflict": false
-  },
-  {
-   "title": "Go, Beavers!",
-   "year": null,
-   "url": "https://letterboxd.com/film/go-beavers/",
-   "date": null,
-   "source": null,
-   "finnkino_date": null,
-   "tmdb_date": null,
-   "global_date": null,
    "conflict": false
   },
   {
