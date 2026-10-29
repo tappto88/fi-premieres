@@ -1,6 +1,17 @@
 {
- "updated": "2026-10-28T10:53:00+00:00",
+ "updated": "2026-10-29T11:09:36+00:00",
  "films": [
+  {
+   "title": "The Legend of Zelda",
+   "year": 2027,
+   "url": "https://letterboxd.com/film/the-legend-of-zelda/",
+   "date": null,
+   "source": null,
+   "finnkino_date": null,
+   "tmdb_date": null,
+   "global_date": "2027-04-28",
+   "conflict": false
+  },
   {
    "title": "Jerry Maguire",
    "year": 1996,
@@ -383,7 +394,7 @@
    "source": null,
    "finnkino_date": null,
    "tmdb_date": null,
-   "global_date": null,
+   "global_date": "2009-08-02",
    "conflict": false
   },
   {
