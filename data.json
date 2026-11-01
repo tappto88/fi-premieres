@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T10:38:55+00:00",
+ "updated": "2026-11-01T11:32:27+00:00",
  "films": [
   {
    "title": "The Fifth Wheel",
@@ -611,9 +611,9 @@
    "year": 2026,
    "url": "https://letterboxd.com/film/avengers-doomsday/",
    "date": "2026-12-16",
-   "source": "manual",
+   "source": "TMDB",
    "finnkino_date": null,
-   "tmdb_date": null,
+   "tmdb_date": "2026-12-16",
    "global_date": "2026-12-16",
    "conflict": false
   },
@@ -801,7 +801,7 @@
    "source": null,
    "finnkino_date": null,
    "tmdb_date": null,
-   "global_date": null,
+   "global_date": "2019-08-18",
    "conflict": false
   },
   {
