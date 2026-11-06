@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T12:48:43+00:00",
+ "updated": "2026-11-06T12:34:00+00:00",
  "films": [
   {
    "title": "Wicker",
@@ -20,7 +20,7 @@
    "source": null,
    "finnkino_date": null,
    "tmdb_date": null,
-   "global_date": null,
+   "global_date": "2013-11-14",
    "conflict": false
   },
   {
@@ -192,10 +192,10 @@
    "title": "Club Kid",
    "year": 2026,
    "url": "https://letterboxd.com/film/club-kid/",
-   "date": null,
-   "source": null,
+   "date": "2027-01-06",
+   "source": "TMDB",
    "finnkino_date": null,
-   "tmdb_date": null,
+   "tmdb_date": "2027-01-06",
    "global_date": "2026-11-04",
    "conflict": false
   },
