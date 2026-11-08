@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T11:23:52+00:00",
+ "updated": "2026-11-08T11:35:33+00:00",
  "films": [
   {
    "title": "Wicker",
@@ -20,7 +20,7 @@
    "source": null,
    "finnkino_date": null,
    "tmdb_date": null,
-   "global_date": null,
+   "global_date": "2013-11-14",
    "conflict": false
   },
   {
@@ -185,7 +185,7 @@
    "source": null,
    "finnkino_date": null,
    "tmdb_date": null,
-   "global_date": null,
+   "global_date": "1996-05-02",
    "conflict": false
   },
   {
