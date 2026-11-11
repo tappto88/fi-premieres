@@ -1,17 +1,6 @@
 {
- "updated": "2026-11-10T13:06:14+00:00",
+ "updated": "2026-11-11T12:15:39+00:00",
  "films": [
-  {
-   "title": "Wicker",
-   "year": 2026,
-   "url": "https://letterboxd.com/film/wicker/",
-   "date": "2026-11-13",
-   "source": "TMDB",
-   "finnkino_date": null,
-   "tmdb_date": "2026-11-13",
-   "global_date": "2026-10-21",
-   "conflict": false
-  },
   {
    "title": "The Fifth Wheel",
    "year": null,
@@ -405,7 +394,7 @@
    "source": null,
    "finnkino_date": null,
    "tmdb_date": null,
-   "global_date": "2017-01-01",
+   "global_date": null,
    "conflict": false
   },
   {
