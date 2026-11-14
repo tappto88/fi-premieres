@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T12:41:46+00:00",
+ "updated": "2026-11-14T11:49:13+00:00",
  "films": [
   {
    "title": "The Fifth Wheel",
@@ -229,7 +229,7 @@
    "source": "manual",
    "finnkino_date": null,
    "tmdb_date": null,
-   "global_date": "2027-01-13",
+   "global_date": "2027-01-14",
    "conflict": false
   },
   {
@@ -971,7 +971,7 @@
   },
   {
    "title": "The Entertainment System Is Down",
-   "year": 2027,
+   "year": null,
    "url": "https://letterboxd.com/film/the-entertainment-system-is-down/",
    "date": null,
    "source": null,
