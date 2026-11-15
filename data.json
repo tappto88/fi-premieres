@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T11:49:13+00:00",
+ "updated": "2026-11-15T12:20:18+00:00",
  "films": [
   {
    "title": "The Fifth Wheel",
@@ -226,9 +226,9 @@
    "year": 2027,
    "url": "https://letterboxd.com/film/children-of-blood-and-bone/",
    "date": "2027-01-15",
-   "source": "manual",
+   "source": "TMDB",
    "finnkino_date": null,
-   "tmdb_date": null,
+   "tmdb_date": "2027-01-15",
    "global_date": "2027-01-14",
    "conflict": false
   },
