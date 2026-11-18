@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T13:56:17+00:00",
+ "updated": "2026-11-18T13:31:39+00:00",
  "films": [
   {
    "title": "The Fifth Wheel",
@@ -559,7 +559,7 @@
    "source": "manual",
    "finnkino_date": null,
    "tmdb_date": null,
-   "global_date": "2026-11-25",
+   "global_date": "2026-11-24",
    "conflict": false
   },
   {
@@ -817,13 +817,13 @@
   },
   {
    "title": "Narnia: The Magician's Nephew",
-   "year": 2026,
+   "year": 2027,
    "url": "https://letterboxd.com/film/narnia-the-magicians-nephew/",
    "date": "2027-02-12",
    "source": "TMDB",
    "finnkino_date": null,
    "tmdb_date": "2027-02-12",
-   "global_date": "2026-02-11",
+   "global_date": "2027-02-10",
    "conflict": false
   },
   {
