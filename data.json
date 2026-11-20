@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T13:59:35+00:00",
+ "updated": "2026-11-20T13:40:40+00:00",
  "films": [
   {
    "title": "The Fifth Wheel",
@@ -174,7 +174,7 @@
    "source": null,
    "finnkino_date": null,
    "tmdb_date": null,
-   "global_date": "1996-05-02",
+   "global_date": "2023-02-01",
    "conflict": false
   },
   {
@@ -218,7 +218,7 @@
    "source": "TMDB",
    "finnkino_date": null,
    "tmdb_date": "2026-11-20",
-   "global_date": "2026-09-25",
+   "global_date": "2026-01-14",
    "conflict": false
   },
   {
