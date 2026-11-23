@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T12:54:57+00:00",
+ "updated": "2026-11-23T15:28:20+00:00",
  "films": [
   {
    "title": "The Fifth Wheel",
@@ -197,17 +197,6 @@
    "finnkino_date": null,
    "tmdb_date": null,
    "global_date": "2027-11-11",
-   "conflict": false
-  },
-  {
-   "title": "La Bola Negra",
-   "year": 2026,
-   "url": "https://letterboxd.com/film/la-bola-negra/",
-   "date": "2026-11-20",
-   "source": "TMDB",
-   "finnkino_date": null,
-   "tmdb_date": "2026-11-20",
-   "global_date": "2026-09-25",
    "conflict": false
   },
   {
