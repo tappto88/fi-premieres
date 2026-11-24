@@ -1,6 +1,39 @@
 {
- "updated": "2026-11-23T15:28:20+00:00",
+ "updated": "2026-11-24T15:23:13+00:00",
  "films": [
+  {
+   "title": "Ghost Market",
+   "year": 2028,
+   "url": "https://letterboxd.com/film/ghost-market/",
+   "date": null,
+   "source": null,
+   "finnkino_date": null,
+   "tmdb_date": null,
+   "global_date": "2028-03-08",
+   "conflict": false
+  },
+  {
+   "title": "Untitled X-Men Film",
+   "year": 2028,
+   "url": "https://letterboxd.com/film/untitled-x-men-film/",
+   "date": null,
+   "source": null,
+   "finnkino_date": null,
+   "tmdb_date": null,
+   "global_date": "2028-05-04",
+   "conflict": false
+  },
+  {
+   "title": "Ghost Rider",
+   "year": 2028,
+   "url": "https://letterboxd.com/film/ghost-rider-2028/",
+   "date": null,
+   "source": null,
+   "finnkino_date": null,
+   "tmdb_date": null,
+   "global_date": "2028-07-27",
+   "conflict": false
+  },
   {
    "title": "The Fifth Wheel",
    "year": null,
@@ -681,17 +714,6 @@
    "finnkino_date": null,
    "tmdb_date": null,
    "global_date": "2010-12-21",
-   "conflict": false
-  },
-  {
-   "title": "Meet the Fockers",
-   "year": 2004,
-   "url": "https://letterboxd.com/film/meet-the-fockers/",
-   "date": "2005-02-18",
-   "source": "TMDB",
-   "finnkino_date": null,
-   "tmdb_date": "2005-02-18",
-   "global_date": "2004-12-22",
    "conflict": false
   },
   {
