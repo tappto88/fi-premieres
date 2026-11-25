@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T15:23:13+00:00",
+ "updated": "2026-11-25T15:04:29+00:00",
  "films": [
   {
    "title": "Ghost Market",
@@ -699,9 +699,9 @@
    "year": 2026,
    "url": "https://letterboxd.com/film/focker-in-law/",
    "date": "2026-11-27",
-   "source": "manual",
+   "source": "TMDB",
    "finnkino_date": null,
-   "tmdb_date": null,
+   "tmdb_date": "2026-11-27",
    "global_date": "2026-11-21",
    "conflict": false
   },
