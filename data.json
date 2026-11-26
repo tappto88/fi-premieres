@@ -1,6 +1,17 @@
 {
- "updated": "2026-11-25T15:04:29+00:00",
+ "updated": "2026-11-26T14:33:49+00:00",
  "films": [
+  {
+   "title": "The Nightingale",
+   "year": 2027,
+   "url": "https://letterboxd.com/film/the-nightingale-2027/",
+   "date": null,
+   "source": null,
+   "finnkino_date": null,
+   "tmdb_date": null,
+   "global_date": "2027-03-17",
+   "conflict": false
+  },
   {
    "title": "Ghost Market",
    "year": 2028,
@@ -42,7 +53,7 @@
    "source": null,
    "finnkino_date": null,
    "tmdb_date": null,
-   "global_date": "2013-11-14",
+   "global_date": null,
    "conflict": false
   },
   {
